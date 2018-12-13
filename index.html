@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="boxx">
+            <img src="img/tinder.svg" alt="logo_tinder">
+            <h1>meet a 'borg</h1>
+            <p>ça va pécho chez les robots 🤖 <span id="finger">👉</span><span id="upper">👌</span> 🤖</p>
+        </div>
+    </header>
+    <section class="choice">
+        <h2>Faites votre choix</h2>
+        <p>il y a 50 hommes et 50 femmes !</p>
+        <p>Robot ipsum Picoist encephaloform cortropic Filclinic Nippoploid kilolytic zoate. Vesicoity levoparous Egyptococcus stepsepalous stenoales sexuoling ochllyze xeraceae tarsorrhea taxthymia. Cytococcus cheirify gynaecoetic tristomy triboness bathyac conplastic siderogenesis ophioatory egenous. Myary cobaltofuge orphobe pneumonform Angloplex thalassoodont stethometric. Pathoholic newance poikilocline technographer desderma cuprless anthrostat hexgon cyanoicide. Pneumonozyme dendrism exbisect methylphage iridicoable hemoscope anthropomere.</p>
+    </section>
+    <section class="pick">
+            <a href="">Afficher tout le monde</a>
+            <a href="">Afficher tous les hommes</a>
+            <a href="">Afficher toutes les femmes</a>
+    </section>
+    <div class="wrapper">
+    <section class="robots">
+        
+    </section>
+    </div>
+    <script id="entry-template" type="text/x-handlebars-template">
+        <div class="robot">
+            <h4 class="robot__name">{{first_name}} <strong>{{last_name}}</strong></h4>
+            <div class="roblox">
+                <img class="robot__portrait" src="{{portrait}}" alt="{{first_name}} {{last_name}}">
+                <small class="robot__type"><strong>Type</strong> : {{type}}</small>
+                <div class="robot__language"><strong>Langue parlée</strong> :<br> {{language}}</div>
+            </div>
+            <p class="robot__description">{{description}}</p>
+        </div>
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

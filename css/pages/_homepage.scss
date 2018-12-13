@@ -1,0 +1,133 @@
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f786c079 0%,#f127909c 100%);
+    & h1 {
+        font-family: Raleway;
+        font-size: 70px;
+        text-transform: uppercase;
+        color: #fa4444;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    & p::first-letter {
+        text-transform: uppercase;
+    }
+    & p {
+        font-size: 22px;
+    }
+    & #finger {
+        position: relative;
+        z-index: 3;
+        display: inline-block;
+        animation: doigt .2s infinite alternate linear;
+    }
+    & #upper {
+        z-index: 1;
+        display: inline-block;
+        position: relative;
+        top:-3px;
+    }
+    &::before{
+        content: '🍆';
+        font-size: 80px;
+        opacity: 0.04;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        animation: teub 10s infinite alternate linear;
+        z-index: 2;
+    }
+    @keyframes teub {
+        from {transform: translate(-50%, -80%) scale(0.5);}
+        to {transform: translate(-50%, -80%) scale(3);}
+    }
+}
+@keyframes doigt {
+    from {transform: translate(0);}
+    to {transform: translateX(15px);} 
+}
+.boxx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+    & img {
+        width: 200px;
+        animation: keur 10s infinite alternate ;
+    }
+}
+@keyframes keur {
+    0% {transform: scale(1);}
+    100% {transform: scale(1.3);}
+}
+.choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    margin: 0 auto;
+    & h2 {
+        font-size: 50px;
+        font-family: Raleway;
+        padding-top: 50px;
+    }
+}
+.pick {
+    width: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    &:nth-of-type(1) {
+        background-color: #6ecaff;
+    }
+    &:nth-of-type(2) {
+        background-color: #ff6e6e;
+    }
+    &:nth-of-type(3) {
+        background-color: #a298ff;
+    }
+}
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+//////////////ROBOT DISPLAY///////////
+//////////////ROBOT DISPLAY///////////
+
+.robots {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.robot {
+    width: 200px;
+    margin: 0 30px;
+    &__portrait {
+        background-color: #ff6e6e;
+        border-radius: 0 40px 0 0;
+    }
+    &__type {
+        position: absolute;
+        left:20px;
+        top:20px;
+    }
+    &__language {
+        position: absolute;
+        left:20px;
+        top:80px;
+    }
+}
+.roblox {
+    position: relative;
+}
